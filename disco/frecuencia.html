@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Artista Favorito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilodisco.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+</head>
+<body>
+    <!--Encabezado de secciones-->
+    <header class="encabezado">
+        <div class="contenido-navegacion">
+            <div class="logo">
+                <h2>Xion <span>MC</span></h2>
+            </div>
+            <nav class="navegacion ocultar">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#biografia">Biografia</a>
+                <a href="../index.html#discografia">Discografia</a>
+                <a href="../index.html#galeria">Galeria</a>
+                <a href="../index.html#videos">Videos</a>
+            </nav>
+            <div class="hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <div class="player">
+        <h2>Nuestro Cuento de Amor</h2>
+        <audio id="audio" src="mp3/cuento.mp3" controls></audio>
+        <button onclick="toggleLyrics(this)">Ver Letra</button>
+        <div class="lyrics">
+            <p>Para siempre en esta historia yo te voy
+                a amar a ti porque tú haces que yo saque
+                lo bueno no que quede en mí</p> 
+            <p>Y es que tú eres la persona más bonita de este mundo
+                tienes algo que te cambia por eso no te
+                confundo</p>
+            <p>Me encanta tu sonrisa y el olor de tu fragancia que la noto cuando pasas
+                y distingo de mil caras </p>
+            <p>Quiero que te quedes en mi vida y no te vayas porque
+                si ya no te encuentro siento que todo me
+                falla </p>
+            <p>Mi vida contigo no quiero perderla,
+               sé lo que quiero y es más que quererla,
+                la luz del camino que mira mi bien,
+                prometo cuidarte agregando ser fiel</p>
+            <p>Gracias al destino que te puso en mi
+                camino al inicio fue difícil pero sí lo
+                conseguimos </p>
+            <p>Pasamos mil obstáculos que nadie se enteró, solo nosotros los
+                sufrimos y el resto no comprendió</p> 
+            <p>Siento que me perderé por siempre en tu mirada
+                pues lo único que quiero es quedarme a
+                tu mano anclada</p> 
+                <div class="letra">
+            <p>Porque eres tú la que me lleva
+                un cuento sin final</p> 
+            <p>Eres mi luz mi
+                tierra mi sol el sueño del que no quiero
+                despertar</p> 
+            <p>Mi amor eres tú, tu voz mi adicción
+                que me hace escribir melodías al mirar</p>
+            <p>Soy tu admirador, tu fanático que sueña
+                una historia de nunca
+                acabar</p>
+            </div>
+                pasaron tantas cosas que se
+                quedaron grabadas tu familia Ya me
+                acepta Y eso es lo que me esperaba me
+                tomó un poco de tiempo ganarme toda
+                confianza y ahora puedo caminar contigo
+                sin miedo en tu casa mi corazón estaba
+                roto y tú lo reparaste pues sentía mucho
+                miedo que me pase lo de antes agarraste
+                de la mano y me dijiste que confiara
+                nuestro cuento se sigue escribiendo como
+                uno de hadas y es que aprecio lo que
+                tengo y nadie me lo va a quitar porque
+                tú eres una estrella que es difícil de
+                alcanzar como un en un millón que no se
+                puede predecir pero todo estaba escrito
+                que vendrías tú por mí en las buenas y
+        </div>
+    </div>
+    <div class="player">
+        <h2>Me Perdiste</h2>
+        <audio id="audio" src="mp3/perdiste.mp3" controls></audio>
+        <button onclick="toggleLyrics(this)">Ver Letra</button>
+        <div class="lyrics">
+            <p>A que estas jugando dimelo</p> 
+            <p>y es que tú
+                eres la persona más bonita de este mundo
+                tienes algo que te cambia por eso no te
+                confundo me encanta tu sonrisa y el olor</p>
+        </div>
+    </div>
+    <script>
+       function toggleLyrics(button) {
+    const player = button.parentElement; // Obtiene el contenedor .player del botón
+    const lyrics = player.querySelector('.lyrics'); // Encuentra la letra en ese contenedor
+
+    // Alterna la visibilidad de la letra
+    if (lyrics.style.display === 'none' || lyrics.style.display === '') {
+        lyrics.style.display = 'block';
+    } else {
+        lyrics.style.display = 'none';
+    }
+}
+
+    </script>
+
+   <!--Redes Sociales--> 
+    <footer>
+        <div class="redes-sociales">
+           
+            <a href="https://www.youtube.com/@XionMcOficial" target="_blank">
+                <img src="../icon/youtube.svg" alt="YouTube">
+            </a>
+            <a href="https://www.instagram.com/xionmc97/" target="_blank">
+                <img src="../icon/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@xion_rap22" target="_blank">
+                <img src="../icon/tiktok.svg" alt="TikTok">
+            </a>
+            <a href="https://open.spotify.com/intl-es/artist/0YRVwZEar3mSHzLXZYD66P" target="_blank">
+                <img src="../icon/spotify.svg" alt="Spotify">
+            </a>
+        </div>
+    </footer>
+    <script src="../js/app.js"></script>
+</body>
+</html>
