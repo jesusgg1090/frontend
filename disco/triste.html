@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Artista Favorito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilodisco.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+</head>
+<body>
+    <!--Encabezado de secciones-->
+    <header class="encabezado">
+        <div class="contenido-navegacion">
+            <div class="logo">
+                <h2>Xion <span>MC</span></h2>
+            </div>
+            <nav class="navegacion ocultar">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#biografia">Biografia</a>
+                <a href="../index.html#discografia">Discografia</a>
+                <a href="../index.html#galeria">Galeria</a>
+                <a href="../index.html#videos">Videos</a>
+            </nav>
+            <div class="hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <div class="player">
+        <h2>Falsas Promesas</h2>
+        <audio id="audio" src="mp3/" controls></audio>
+        <button onclick="toggleLyrics(this)">Ver Letra</button>
+        <div class="lyrics">
+            </div>
+    </div>
+    <div class="player">
+        <h2>Como Olvidarte</h2>
+        <audio id="audio" src="mp3/" controls></audio>
+        <button onclick="toggleLyrics(this)">Ver Letra</button>
+        <div class="lyrics">
+            </div>
+    </div>
+    <div class="player">
+        <h2>Que Paso?</h2>
+        <audio id="audio" src="mp3/" controls></audio>
+        <button onclick="toggleLyrics(this)">Ver Letra</button>
+        <div class="lyrics">
+            </div>
+    </div>
+    <div class="player">
+        <h2>No te Vayas</h2>
+        <audio id="audio" src="mp3/" controls></audio>
+        <button onclick="toggleLyrics(this)">Ver Letra</button>
+        <div class="lyrics">
+            </div>
+    </div>
+    <div class="player">
+        <h2>Me Prometo Olvidarte</h2>
+        <audio id="audio" src="mp3/" controls></audio>
+        <button onclick="toggleLyrics(this)">Ver Letra</button>
+        <div class="lyrics">
+            </div>
+    </div>
+    <div class="player">
+        <h2>Me Equivoque al Cambiarte</h2>
+        <audio id="audio" src="mp3/" controls></audio>
+        <button onclick="toggleLyrics(this)">Ver Letra</button>
+        <div class="lyrics">
+            </div>
+    </div>
+    <div class="player">
+        <h2>No Volverás</h2>
+        <audio id="audio" src="mp3/" controls></audio>
+        <button onclick="toggleLyrics(this)">Ver Letra</button>
+        <div class="lyrics">
+            </div>
+    </div>
+    <div class="player">
+        <h2>Amarte Hasta el Final Pt. 2</h2>
+        <audio id="audio" src="mp3/" controls></audio>
+        <button onclick="toggleLyrics(this)">Ver Letra</button>
+        <div class="lyrics">
+            </div>
+    </div>
+    <div class="player">
+        <h2>Un Corazón Suicida</h2>
+        <audio id="audio" src="mp3/" controls></audio>
+        <button onclick="toggleLyrics(this)">Ver Letra</button>
+        <div class="lyrics">
+            </div>
+    </div>
+    <div class="player">
+        <h2>Dolió Perderte</h2>
+        <audio id="audio" src="mp3/" controls></audio>
+        <button onclick="toggleLyrics(this)">Ver Letra</button>
+        <div class="lyrics">
+            </div>
+    </div>
+    <div class="player">
+        <h2>Nadie Como Tú</h2>
+        <audio id="audio" src="mp3/" controls></audio>
+        <button onclick="toggleLyrics(this)">Ver Letra</button>
+        <div class="lyrics">
+            </div>
+    </div>
+    
+    <script>
+        function toggleLyrics(button) {
+     const player = button.parentElement; // Obtiene el contenedor .player del botón
+     const lyrics = player.querySelector('.lyrics'); // Encuentra la letra en ese contenedor
+ 
+     // Alterna la visibilidad de la letra
+     if (lyrics.style.display === 'none' || lyrics.style.display === '') {
+         lyrics.style.display = 'block';
+     } else {
+         lyrics.style.display = 'none';
+     }
+ }
+ 
+     </script>
+    <footer>
+        <div class="redes-sociales">
+           
+            <a href="https://www.youtube.com/@XionMcOficial" target="_blank">
+                <img src="../icon/youtube.svg" alt="YouTube">
+            </a>
+            <a href="https://www.instagram.com/xionmc97/" target="_blank">
+                <img src="../icon/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@xion_rap22" target="_blank">
+                <img src="../icon/tiktok.svg" alt="TikTok">
+            </a>
+            <a href="https://open.spotify.com/intl-es/artist/0YRVwZEar3mSHzLXZYD66P" target="_blank">
+                <img src="../icon/spotify.svg" alt="Spotify">
+            </a>
+        </div>
+    </footer>
+    <script src="../js/app.js"></script>
+</body>
+</html>
