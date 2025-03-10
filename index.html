@@ -201,6 +201,37 @@
         </ul>
     </section>
 
+
+    <section id="galeria" class="galeria">
+        <h2>📸 Galería</h2>
+        <div class="carrusel">
+            <div class="carrusel-contenedor" id="carruselContenedor">
+                <img src="gale/xion1.jpg" alt="Imagen 1" class="imagen-carrusel">
+                <img src="gale/xion2.jpg" alt="Imagen 2" class="imagen-carrusel">
+                <img src="gale/xion3.jpg" alt="Imagen 3" class="imagen-carrusel">
+                <img src="gale/xion4.jpg" alt="Imagen 4" class="imagen-carrusel">
+                <img src="gale/xion5.jpg" alt="Imagen 5" class="imagen-carrusel">
+                <img src="gale/xion6.jpg" alt="Imagen 6" class="imagen-carrusel">
+                <img src="gale/xion7.jpg" alt="Imagen 7" class="imagen-carrusel">
+                <img src="gale/xion8.jpg" alt="Imagen 8" class="imagen-carrusel">
+                <img src="gale/xion9.jpg" alt="Imagen 9" class="imagen-carrusel">
+                <img src="gale/xion10.jpg" alt="Imagen 10" class="imagen-carrusel">
+                <img src="gale/xion11.jpg" alt="Imagen 11" class="imagen-carrusel">
+                <img src="gale/xion12.jpg" alt="Imagen 12" class="imagen-carrusel">
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let carrusel = document.getElementById("carruselContenedor");
+            let imagenes = document.querySelectorAll(".imagen-carrusel");
+            imagenes.forEach(img => {
+                let clon = img.cloneNode(true);
+                carrusel.appendChild(clon);
+            });
+        });
+    </script>
+
     <section id="colaboraciones" class="seccion">
         <h2>🎤 Colaboraciones</h2>
         <p>Estos artistas han colaborado con Xion MC a lo largo de su carrera.</p>
@@ -238,6 +269,8 @@
             </div>
         </div>
     </section>
+
+    
 
     <section id="videos">
         <h2>🎥 Videos</h2>
@@ -279,7 +312,15 @@
             </a>
         </div>
     </footer>
-    
+    <script>
+        function mostrarImagen(elemento) {
+            document.getElementById("modal").style.display = "flex";
+            document.getElementById("imagenModal").src = elemento.src;
+        }
+        function cerrarImagen() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
     <script src="js/app.js"></script>
 
 </body>
