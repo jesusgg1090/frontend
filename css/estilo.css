@@ -347,7 +347,80 @@ section {
 .colab:hover img {
     transform: scale(1.1);
 }
+/****** Sección de Videos ******/
+#videos {
+    background: #121212; /* Fondo oscuro para resaltar los videos */
+    padding: 60px 10%;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
 
+/* Título de la sección */
+#videos h2 {
+    font-size: 2.5rem;
+    color: #ff4444;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(255, 68, 68, 0.7);
+    margin-bottom: 15px;
+    animation: fadeIn 1.5s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Icono junto al título */
+#videos h2::before {
+    content: "🎥";
+    font-size: 2.8rem;
+}
+
+/* Descripción de la sección */
+#videos p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-style: italic;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    animation: slideUp 1s ease-in-out;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 16px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+}
 /* Estilos para el footer */
 footer {
     background-color: var(--azulOscuro); /* Color de fondo */
