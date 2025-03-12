@@ -24,3 +24,10 @@ function cerrarMenu(){
         });
     });
 }
+document.querySelectorAll('.toggle-btn').forEach(button => {
+    button.addEventListener('click', function () {
+        const info = this.previousElementSibling; // Selecciona .info
+        info.classList.toggle('show'); // Alterna la clase "show"
+        this.textContent = info.classList.contains('show') ? "Ocultar" : "Ver más";
+    });
+});
