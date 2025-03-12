@@ -211,33 +211,94 @@ section {
     }
 }
 .servicio{
-    display: flex;
+    background: linear-gradient(135deg, #24681e, #22127c);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+
+}
+.servicio img{
+    width: 150px;
+    height: auto;
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease-in-out;
+}
+.servicio h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+.info {
+    display: none; /* Oculta el contenido al cargar */
+    text-align: center;
+}
+
+.info.show {
+    display: flex; /* Solo se activa cuando se muestra */
     flex-direction: column;
     align-items: center;
 }
-.servicio img{
-    background-color: #8f8f8f;
-    width: 19rem;
-    height: 19rem;
-    border-radius: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    box-shadow: 10px 10px 16px -6px rgba(0, 0, 0, 0.45);
-    transition: all .3s ease-in-out;
+
+.servicio .toggle-btn {
+    background: linear-gradient(45deg, #000000, #000000);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(255, 117, 140, 0.5);
+    position: relative;
+    overflow: hidden;
 }
-.servicio h3{
-    font-size: 2.2rem;
-    color: var(--blanco);
+.servicio .toggle-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: left 0.3s ease-in-out;
+}
+.servicio .toggle-btn:hover::after {
+    left: 100%;
+}
+.servicio .toggle-btn:hover {
+    background: #176e3b;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 117, 140, 0.7);
+}
+.servicio .toggle-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 10px rgba(255, 117, 140, 0.9);
+}
+.servicio:hover img {
+    transform: rotate(10deg) scale(1.1);
 }
 .servicio h5{
-    font-size: 1.2rem;
-    color: #ff0000;
+    font-size: 16px;
+    margin: 5px 0;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    text-align: center;
 }
 .servicio p{
-    font-size: 1.8rem;
-    text-align: center;
+    font-size: 18px;
+    margin: 5px 0;
+    opacity: 0.8;
 }
 @media(min-width: 768px){
     .servicio p{
@@ -250,6 +311,26 @@ section {
     }
     .servicio:hover .fas{
         background-color: var(--azulOscuro);
+    }
+}
+@media screen and (max-width: 600px) {
+    .servicio {
+        max-width: 100%; /* Los servicios ocupan el 100% del contenedor */
+        padding: 15px; /* Ajusta el padding */
+    }
+
+    .servicio img {
+        width: 120px; /* Tamaño de imagen ajustado para móviles */
+    }
+
+    .servicio .toggle-btn {
+        font-size: 14px; /* Ajusta el tamaño de la fuente */
+        padding: 10px 20px;
+        width: 100%; /* El botón ocupa todo el ancho */
+    }
+
+    .servicios h2 {
+        font-size: 2rem; /* Ajusta el tamaño de texto del título */
     }
 }
 /****** Estilos generales ******/
@@ -448,6 +529,15 @@ footer {
 .redes-sociales a:hover img {
     transform: scale(1.2); /* Aumenta el tamaño ligeramente */
 }
+
+.titulo-galeria {
+    font-size: 2.5rem; /* Tamaño grande */
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Convertir a mayúsculas */
+    color: #ffcc00; /* Color llamativo */
+    text-shadow: 3px 3px 10px rgba(255, 204, 0, 0.7); /* Sombra para dar efecto de brillo */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
 .galeria {
     text-align: center;
     padding: 50px 20px;
@@ -467,17 +557,20 @@ footer {
     display: flex;
     width: max-content;
     animation: deslizar 50s linear infinite;
+    gap: 50px;
 }
 .imagen-carrusel {
     width: auto;
-    height: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    flex-shrink: 0;
+        height: 300px;
+        max-height: 100%;
+        object-fit: contain;
+        flex-shrink: 0;
+        margin-right: 10px;
+        cursor: pointer;
 }
 @keyframes deslizar {
     0% { transform: translateX(0%); }
-    100% { transform: translateX(-100%); }
+    100% { transform: translateX(-50%); }
 }
 @media (max-width: 768px) {
     .imagen-carrusel {
@@ -490,3 +583,4 @@ footer {
         height: 150px; /* Aún más pequeña en pantallas reducidas */
     }
 }
+
