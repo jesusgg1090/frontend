@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!-- Declaración del tipo de documento y el idioma (español) -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Artista Favorito</title>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración para diseño responsivo -->
+    <title>Mi Artista Favorito</title> <!-- Título de la página -->
+
+        <!-- Preconexión a Google Fonts para mejorar la velocidad de carga -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    
+        <!-- Importación de fuentes desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+            <!-- Enlace a hojas de estilo CSS -->
     <link rel="stylesheet" href="../css/estilodisco.css">
     <link rel="stylesheet" href="../css/normalize.css">
 </head>
@@ -18,15 +23,19 @@
     <header class="encabezado">
         <div class="contenido-navegacion">
             <div class="logo">
+                <!-- Logo del artista -->
                 <h2>Xion <span>MC</span></h2>
             </div>
+            <!-- Barra de navegación -->
             <nav class="navegacion ocultar">
                 <a href="../index.html">Inicio</a>
                 <a href="../index.html#biografia">Biografia</a>
                 <a href="../index.html#discografia">Discografia</a>
                 <a href="../index.html#galeria">Galeria</a>
+                <a href="../index.html#colaboraciones">Colaboraciones</a>
                 <a href="../index.html#videos">Videos</a>
             </nav>
+            <!-- Icono de menú hamburguesa para dispositivos móviles -->
             <div class="hamburguesa">
                 <span></span>
                 <span></span>
@@ -34,10 +43,15 @@
             </div>
         </div>
     </header>
+    <!-- Clase player CSS -->
     <div class="player">
+        <!-- Título de la canción -->
         <h2>Nuestro Cuento de Amor</h2>
+        <!-- Audio de la canción -->
         <audio id="audio" src="mp3/cuento.mp3" controls></audio>
+        <!-- Botón para ver la letra -->
         <button onclick="toggleLyrics(this)">Ver Letra</button>
+        <!-- Letra de la canción -->
         <div class="lyrics">
             <p>Para siempre en esta historia yo te voy a amar a ti porque tú haces que yo saque lo bueno no que quede en mí</p> 
             <p>Y es que tú eres la persona más bonita de este mundo tienes algo que te cambia por eso no te confundo</p>
@@ -47,6 +61,7 @@
             <p>Gracias al destino que te puso en mi camino al inicio fue difícil pero sí lo conseguimos </p>
             <p>Pasamos mil obstáculos que nadie se enteró, solo nosotros los sufrimos y el resto no comprendió</p> 
             <p>Siento que me perderé por siempre en tu mirada pues lo único que quiero es quedarme a tu mano anclada</p> 
+                <!-- Coro de la canción -->
                 <div class="letra">
             <p>Porque eres tú la que me lleva un cuento sin final</p> 
             <p>Eres mi luz mi tierra mi sol el sueño del que no quiero despertar</p> 
@@ -61,6 +76,7 @@
             <p>Como una en un millón que no se puede predecir, pero todo estaba escrito que vendrías tú por mí </p>
             <p>En las buenas y en las malas te prometo que estaré cumpliendo mis promesas que yo te hice en el ayer</p>
             <p>porque ambos entendemos que lo nuestro es diferente me aceptaste como era viendo muchos pretendientes</p>
+                <!-- Coro de la canción -->
                 <div class="letra">
                     <p>Porque eres tú la que me lleva un cuento sin final</p> 
                     <p>Eres mi luz mi tierra mi sol el sueño del que no quiero despertar</p> 
@@ -69,11 +85,18 @@
                     </div>
         </div>
     </div>
+
+    <!-- Clase player CSS -->
     <div class="player">
+         <!-- Título de la canción -->
         <h2>Me Perdiste</h2>
-        <audio id="audio" src="mp3/perdiste.mp3" controls></audio>
+        <!-- Audio de la canción -->
+        <audio id="audio" src="mp3/perdiste.mp3"  controls></audio>
+        <!-- Botón para ver la letra -->
         <button onclick="toggleLyrics(this)">Ver Letra</button>
+        <!-- Letra de la canción -->
         <div class="lyrics">
+            <!-- Coro de la canción -->
             <div class="letra">
             <p>A que estas jugando dimelo</p> 
             <p>Que me confunde esta relación, un día eres linda conmigo</p> 
@@ -89,6 +112,7 @@
             <p>Parece que te asusta la palabra de unos otros cuando te entrego mi corazón este te vuelve muy roto </p>
             <p>No quiero estar sufriendo por tu tonta inmadurez mientras yo quiero algo serio tú tan solo no me ves</p> 
             <p>Tal vez tú no me quieras como yo te quiero a ti o tal vez te hicieron daño que tú no puedes seguir</p>
+                <!-- Coro de la canción -->
                 <div class="letra">
                     <p>A que estas jugando dimelo</p> 
                     <p>Que me confunde esta relación, un día Eres linda conmigo</p> 
@@ -104,6 +128,7 @@
             <p>O quizás te enamoraste de alguien más y eso te duele por no saber elegir a la persona que te quiere</p> 
             <p>No puedo estar viviendo condenado en este limbo, pues si sin duda nuestro amor es algo que nunca ha existido</p> 
             <p>Me despido porque no soy un teléfono en la espera, llévate mi corazón pues no vale lo que me queda</p> 
+                <!-- Coro de la canción -->
                 <div class="letra">
                     <p>A que estas jugando dimelo</p> 
                     <p>Que me confunde esta relación, un día Eres linda conmigo</p> 
@@ -113,11 +138,18 @@
                         </div>
         </div>
     </div>
+
+    <!-- Clase player CSS -->
     <div class="player">
+         <!-- Título de la canción -->
         <h2>Duele Saber Que No Estás</h2>
+        <!-- Audio de la canción -->
         <audio id="audio" src="mp3/duele.mp3" controls></audio>
+        <!-- Botón para ver la letra -->
         <button onclick="toggleLyrics(this)">Ver Letra</button>
+        <!-- Letra de la canción -->
         <div class="lyrics">
+            <!-- Coro de la canción -->
             <div class="letra">
             <p>Hay alguien más y todo llegó a su fin yo por las noches no puedo ni dormir</p> 
             <p>Si eras tú quien decía que siempre estaría aquí</p> 
@@ -130,6 +162,7 @@
         <p>Donde toda la melancolía baila junto a mí que esto me tiene perdido porque pienso solo en ti</p> 
         <p>Como quieres que yo duerma mira todas mis ojeras donde tomo decisiones tan podridas allí afuera </p>
         <p>Por eso la paso bebiendo en mis noches amargas de madrugada porque todos los consejos para mí no valen nada</p>
+            <!-- Coro de la canción -->
             <div class="letra">
         <p>Duele pensar que estás con otros, eso me mata</p>
         <p>Si dejas el pasado atrás, porque yo no puedo olvidar</p>
@@ -143,7 +176,8 @@
         <p>Pero mentiste, porque te fuiste, ni motivos ni razones tú me diste</p> 
         <p>Me siento triste aún no creo que esto es verdad que lo que sería por siempre tuvo este horrible final</p> 
         <p>Y sé que no volveras, que quizás ya hay alguien más</p> 
-        <p>Y aunque sé que intentarás mis besos no borrará</p>   
+        <p>Y aunque sé que intentarás mis besos no borrará</p>
+        <!-- Coro de la canción -->   
         <div class="letra">
             <p>Duele pensar que estás con otros, eso me mata</p>
             <p>Si dejas el pasado atrás, porque yo no puedo olvidar</p>
@@ -153,10 +187,16 @@
              </div>
         </div>
     </div>
+
+    <!-- Clase player CSS -->
     <div class="player">
+         <!-- Título de la canción -->
         <h2>Mi vida eres tú</h2>
+        <!-- Audio de la canción -->
         <audio id="audio" src="mp3/vida.mp3" controls></audio>
+        <!-- Botón para ver la letra -->
         <button onclick="toggleLyrics(this)">Ver Letra</button>
+        <!-- Letra de la canción -->
         <div class="lyrics">
             <p>Haces que toque el cielo de manera inoportuna, pues tu amor ya me ha salvado con tantas de tus locuras</p>
             <p>Me pierdo en tu mirada donde mi alma se aventura y en tus brazos he encontrado la calma que sí perdura</p> 
@@ -165,7 +205,8 @@
             <p>Porque antes era un lienzo que no se pintaba bien, pues tú agregaste los colores lindos a mi parecer</p> 
             <p>Solo quiero que tu amor se quede para siempre en mí, de todas formas sé que entiendes que contigo soy feliz</p> 
             <p>Por cierto tú sanaste aquel pasado arrebatado, donde el corazón fue lindo pero luego traicionado</p> 
-            <p>Quise darlo todo por quien no vale un centavo porque la que vale oro quien hoy día está a mi lado</p> 
+            <p>Quise darlo todo por quien no vale un centavo porque la que vale oro quien hoy día está a mi lado</p>
+                <!-- Coro de la canción --> 
                 <div class="letra">
             <p>Tu me haces volar, el cielo tocar</p> 
             <p>Mi vida eres tú, eres mi chica ideal</p> 
@@ -182,6 +223,7 @@
             <p>Pues estaba por rendirme y alguien me llegó a alcanzar, flechando mi Corazón duro para que yo sepa amar</p> 
             <p>He probado mil cafés pero yo quiero el de tus ojos, esa miradita dulce que me quita los enojos</p> 
             <p>Hoy brindo por lo nuestro y todo lo que hemos logrado, esperando que a futuro ambos estemos casados</p>
+                <!-- Coro de la canción -->
                 <div class="letra">
                     <p>Tu me haces volar, el cielo tocar</p> 
                     <p>Mi vida eres tú, eres mi chica ideal</p> 
@@ -192,10 +234,16 @@
                     </div>
         </div>
     </div>
+
+    <!-- Clase player CSS -->
     <div class="player">
+         <!-- Título de la canción -->
         <h2>Promesas a la Luna</h2>
+        <!-- Audio de la canción -->
         <audio id="audio" src="mp3/luna.mp3" controls></audio>
+        <!-- Botón para ver la letra -->
         <button onclick="toggleLyrics(this)">Ver Letra</button>
+        <!-- Letra de la canción -->
         <div class="lyrics">
             <p>Sigo estando solo esperando que tú regreses, pues todo lo que vivimos no se borra con los meses</p> 
             <p>El recuerdo de tus besos en mi piel si permanece, donde siento que me besas porque en sueños te apareces</p> 
@@ -205,6 +253,7 @@
             <p>Ya en la luna dejamos lo que no pudimos salvar, hoy en día somos un par de desconocidos más</p> 
             <p>Nos cruzamos en el parque pero claro que volteamos, seguimos hacia delante pensando que esto ha acabado</p> 
             <p>Te quise con mi alma y espero que tú también, no le cuentes a la luna que mis noches te lloré </p>
+            <!-- Coro de la canción -->
             <div class="letra">
             <p>En la luna viven esas promesas que jamás cumpliremos</p> 
             <p>Vive el ramo de bodas de un amor que era eterno</p> 
@@ -218,7 +267,8 @@
             <p>La luna fue testigo de todo nuestro comienzo, y aunque compre otras caricias a tu cuerpo lo recuerdo</p>
             <p>Recuerdo aquellas noches cuando nos hacíamos uno, y me la paso en las botellas tomando de desayuno</p> 
             <p>No hace falta que lo diga pues tus ojos se apagaron, cuando el brillo de tu amor bajo tierra fue enterrado</p> 
-            <p>Cerrando para siempre aquel capítulo de amor, donde mi vida fue marcada por mi más bonito error</p> 
+            <p>Cerrando para siempre aquel capítulo de amor, donde mi vida fue marcada por mi más bonito error</p>
+            <!-- Coro de la canción --> 
             <div class="letra">
                 <p>En la luna viven esas promesas que jamás cumpliremos</p> 
                 <p>Vive el ramo de bodas de un amor que era eterno</p> 
@@ -227,10 +277,16 @@
                 </div>
         </div>
     </div>
+
+    <!-- Clase player CSS -->
     <div class="player">
+         <!-- Título de la canción -->
         <h2>Encontré a una Princesa</h2>
+        <!-- Audio de la canción -->
         <audio id="audio" src="mp3/princesa.mp3" controls></audio>
+        <!-- Botón para ver la letra -->
         <button onclick="toggleLyrics(this)">Ver Letra</button>
+        <!-- Letra de la canción -->
         <div class="lyrics">
             <p>Cuando te acercaste dije tú eres para mí, estoy contento que lo nuestro no le llegará su fin</p> 
             <p>Porque a pesar de todo tú me has hecho muy feliz, y estás segura de quedarte porque no vas a sufrir</p>
@@ -240,6 +296,7 @@
             <p>Amo como entiendes sin que diga una palabra, sobre todo tus ojitos portadores de mi alma</p> 
             <p>Eres el motivo que me tiene sonriendo, pues los días son regalos de la niña de mis sueños</p>
             <p>Por lo tanto en esta vida quiero caminar contigo, eres mas que amor y la razón de cada latido</p>
+            <!-- Coro de la canción -->
             <div class="letra">
             <p>Gracias por sostener de mi mano</p>
             <p>Por sentirme tan amado me siento afortunado</p> 
@@ -254,7 +311,8 @@
             <p>De tu mirada de tu pelo y de tu sonrisa un beso tuyo y mi tiempo se paraliza</p> 
             <p>Me tranquilizas solo contigo hayo paz y por eso y más razones te amo cada día más</p> 
             <p>Oye mi niña no dudes que yo te voy a cuidar</p>
-            <p>Y que quiero estar contigo una eternidad </p> 
+            <p>Y que quiero estar contigo una eternidad </p>
+            <!-- Coro de la canción --> 
             <div class="letra">
                 <p>Gracias por sostener de mi mano</p>
                 <p>Por sentirme tan amado me siento afortunado</p> 
@@ -263,14 +321,21 @@
                 </div>
         </div>
     </div>
+
+    <!-- Clase player CSS -->
     <div class="player">
+         <!-- Título de la canción -->
         <h2>Te amo al mirarte</h2>
+        <!-- Audio de la canción -->
         <audio id="audio" src="mp3/mirarte.mp3" controls></audio>
+        <!-- Botón para ver la letra -->
         <button onclick="toggleLyrics(this)">Ver Letra</button>
+        <!-- Letra de la canción -->
         <div class="lyrics">
             <p>Hoy quiero, decirte lo que siento</p> 
             <p>Cada vez que te veo</p> 
             <p>Siento que soy Romeo</p>
+            <!-- Coro de la canción -->
             <div class="letra">
             <p>Y yo no sé, cómo explicarte</p>
             <p>Siento que te amo solo al mirarte</p> 
@@ -286,7 +351,8 @@
             <p>Cada vez que pasa usted mi corazón se me acelera, donde me pongo nervioso y el valor se me congela</p> 
             <p>Mis amigos dicen que te olvide que no pierda tiempo, que tal vez otra persona forma parte de tu cuento</p> 
             <p>Pero siento por dentro que no hay nadie más, no hace falta decir que tú quieres amar </p>
-            <p>Lo noto en tus ojos no tienes que hablar, yo sé que también tú me logras captar </p> 
+            <p>Lo noto en tus ojos no tienes que hablar, yo sé que también tú me logras captar </p>
+            <!-- Coro de la canción --> 
             <div class="letra">
                 <p>Y yo no sé, cómo explicarte</p>
                 <p>Siento que te amo solo al mirarte</p> 
@@ -302,6 +368,7 @@
             <p>El siguiente Level es oír que tú me quieres, pues el sueño más lejano se cumple si lo mereces</p> 
             <p>Y si algún día escuchas esto y reconoces tú mi voz, sabrás que siempre fuiste la nota de esta canción</p>
             <p>Si algún día escuchas esto y reconoces tú mi voz, sabrás que siempre fuiste la nota de esta canción</p>
+            <!-- Coro de la canción -->
             <div class="letra">
                 <p>Y yo no sé, cómo explicarte</p>
                 <p>Siento que te amo solo al mirarte</p> 
@@ -327,22 +394,34 @@
 
    <!--Redes Sociales--> 
     <footer>
+        <!-- Clase redes-sociales CSS -->
         <div class="redes-sociales">
            
+            <!-- Red Social Youtube -->
             <a href="https://www.youtube.com/@XionMcOficial" target="_blank">
                 <img src="../icon/youtube.svg" alt="YouTube">
             </a>
+            <!-- Red Social Instagram -->
             <a href="https://www.instagram.com/xionmc97/" target="_blank">
                 <img src="../icon/instagram.svg" alt="Instagram">
             </a>
+            <!-- Red Social Tiktok -->
             <a href="https://www.tiktok.com/@xion_rap22" target="_blank">
                 <img src="../icon/tiktok.svg" alt="TikTok">
             </a>
+            <!-- Red Social Spotify -->
             <a href="https://open.spotify.com/intl-es/artist/0YRVwZEar3mSHzLXZYD66P" target="_blank">
                 <img src="../icon/spotify.svg" alt="Spotify">
             </a>
         </div>
+        <footer class="footer">
+
+            <!-- Créditos del desarrollador -->
+            <p>Todos los derechos reservados 2025 <span class="fecha"></span> &copy; Desarrollado por 
+                <a href="../cv/cv.html">Jesus Alberto Garcia Garcia</a></p>
+        </footer>
     </footer>
+    
     <script src="../js/app.js"></script>
 </body>
 </html>
