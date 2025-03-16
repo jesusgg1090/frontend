@@ -1,69 +1,98 @@
 /* Ajustes generales */
-:root{
-    --oscuro: #07070A;
-    --azulOscuro: #0A1128;
-    --azulClaro: #006FE6;
-    --blanco: #FEFCFB;
-    --titulos:'Josefin Sans', serif;
-    --parrafos:'Montserrat', sans-serif;
+/* Definición de variables CSS personalizadas para colores y tipografías */
+:root {
+    --oscuro: #07070A; /* Color negro oscuro */
+    --azulOscuro: #0A1128; /* Azul muy oscuro */
+    --azulClaro: #006FE6; /* Azul claro */
+    --blanco: #FEFCFB; /* Blanco */
+    --titulos: 'Josefin Sans', serif; /* Tipografía para títulos */
+    --parrafos: 'Montserrat', sans-serif; /* Tipografía para párrafos */
 }
-h1{
-    font-family: var(--titulos);
+
+/* Estilo para los encabezados de nivel 1 */
+h1 {
+    font-family: var(--titulos); /* Usa la fuente definida para títulos */
 }
-p{
-    font-family: var(--parrafos);
+
+/* Estilo para los párrafos */
+p {
+    font-family: var(--parrafos); /* Usa la fuente definida para párrafos */
 }
-html{
-    box-sizing: border-box;
-    font-size: 62.5%;
+
+/* Configuración de la caja del modelo (box model) */
+html {
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total de los elementos */
+    font-size: 62.5%; /* Establece el tamaño base de fuente en 10px (62.5% de 16px) */
 }
-*,*::before, *::after{
-    box-sizing: inherit;
+
+/* Asegura que el box-sizing se aplique a todos los elementos y sus pseudo-elementos */
+*, *::before, *::after {
+    box-sizing: inherit; /* Hereda el box-sizing del elemento html */
 }
-.caja{
-    background-color: var(--azulClaro);
-   
+
+/* Estilo para un contenedor con fondo azul claro */
+.caja {
+    background-color: var(--azulClaro); /* Aplica el color azul claro */
 }
-h1,h2,h3{
-    font-family: var(--titulos);
+
+/* Aplica la tipografía de títulos a todos los encabezados */
+h1, h2, h3 {
+    font-family: var(--titulos); /* Usa la fuente para títulos */
 }
-p,a{
-    font-family: var(--parrafos);
+
+/* Aplica la tipografía de párrafos a párrafos y enlaces */
+p, a {
+    font-family: var(--parrafos); /* Usa la fuente para párrafos */
 }
-.ocultar{
-    display: none;
+
+/* Clase para ocultar elementos */
+.ocultar {
+    display: none; /* Oculta el elemento */
 }
-.contenedor{
-    margin: 0 auto;
-    max-width: 120rem;
-    width: 95%;
+
+/* Clase para un contenedor con márgenes automáticos y un ancho máximo */
+.contenedor {
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    max-width: 120rem; /* Ancho máximo de 1200px */
+    width: 95%; /* Ancho del 95% del viewport */
 }
-.btn{
-    padding: 1rem 3rem;
-    font-weight: bold;
-    font-family: var(--parrafos);
-    font-size: 2rem;
-    border: none;
-    color: var(--blanco);
+
+/* Estilo para un botón genérico */
+.btn {
+    padding: 1rem 3rem; /* Espaciado interno: 1rem arriba y abajo, 3rem a los lados */
+    font-weight: bold; /* Texto en negrita */
+    font-family: var(--parrafos); /* Usa la fuente para párrafos */
+    font-size: 2rem; /* Tamaño de fuente de 2rem */
+    border: none; /* Sin borde */
+    color: var(--blanco); /* Color del texto en blanco */
 }
-.bordes{
-    border: 2px solid var(--azulClaro);
-    color: var(--azulClaro);
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    transition: background-color .3s ease-in-out;
+
+/* Estilo para elementos con bordes */
+.bordes {
+    border: 2px solid var(--azulClaro); /* Borde sólido de 2px con color azul claro */
+    color: var(--azulClaro); /* Color del texto azul claro */
+    text-decoration: none; /* Sin subrayado */
+    display: block; /* Elemento de bloque */
+    text-align: center; /* Alineación centrada del texto */
+    transition: background-color .3s ease-in-out; /* Transición suave del color de fondo en 0.3 segundos */
 }
-.bordes:hover{
-    background-color: var(--azulClaro);
-    color: var(--blanco);
+
+/* Cambia el color de fondo y el texto al pasar el cursor sobre el elemento con la clase 'bordes' */
+.bordes:hover {
+    background-color: var(--azulClaro); /* Fondo azul claro */
+    color: var(--blanco); /* Texto blanco */
 }
-.btn:hover{
-    cursor: pointer;
+
+/* Cambia el cursor a una mano al pasar sobre un elemento con la clase 'btn' */
+.btn:hover {
+    cursor: pointer; /* Cursor tipo puntero */
 }
-.azul{
-   background-color: var(--azulClaro);
+
+/* Fondo azul claro para elementos con la clase 'azul' */
+.azul {
+    background-color: var(--azulClaro); /* Fondo azul claro */
 }
+
 @keyframes desplazamiento{
     0%{
         transform: translate(-100%);
@@ -72,44 +101,139 @@ p,a{
         transform: translateX(0);
     }
 }
+/* Estilo global para el cuerpo del documento */
 body {
-    font-family: var(--parrafos);
-    background-color: var(--oscuro);
-    color: var(--blanco);
-    margin: 0;
-    padding: 0;
+    font-family: var(--parrafos); /* Usa la fuente definida para párrafos */
+    background-color: var(--oscuro); /* Fondo negro oscuro */
+    color: var(--blanco); /* Texto en color blanco */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
 }
 
-/* Estilos del encabezado */
+/* Estilos para el encabezado */
 header {
-    background-color: var(--azulOscuro);
-    padding: 20px;
-    text-align: center;
-    position: static;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-.encabezado::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, .5);
-    z-index: -1;
-}
-.logo h2{
-    font-family: 3rem;
-    font-size: 3rem;
-    color: var(--oscuro);
-}
-.logo h2 span{
-    color: var(--azulClaro);
+    background-color: var(--azulOscuro); /* Fondo azul oscuro */
+    padding: 20px; /* Espaciado interno de 20px */
+    text-align: center; /* Texto centrado */
+    position: static; /* Posición estática (por defecto) */
+    width: 100%; /* Ancho completo */
+    top: 0; /* Anclado en la parte superior */
+    left: 0; /* Anclado a la izquierda */
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
 }
 
+/* Efecto de superposición oscura semitransparente en el encabezado */
+.encabezado::before {
+    content: ''; /* Contenido vacío para el pseudo-elemento */
+    position: absolute; /* Posición absoluta respecto al elemento padre */
+    top: 0; /* Anclado en la parte superior */
+    left: 0; /* Anclado a la izquierda */
+    right: 0; /* Extensión completa a la derecha */
+    bottom: 0; /* Extensión completa hacia abajo */
+    background-color: rgba(0, 0, 0, .5); /* Fondo negro semitransparente */
+    z-index: -1; /* Detrás del contenido del encabezado */
+}
+
+/* Estilo para el logo dentro del encabezado */
+.logo h2 {
+    font-family: 3rem; /* (Error) Aquí debería ser 'font-size', no 'font-family' */
+    font-size: 3rem; /* Tamaño de fuente de 3rem */
+    color: var(--oscuro); /* Texto en color negro oscuro */
+}
+
+/* Cambia el color del texto dentro de un 'span' que esté dentro de '.logo h2' */
+.logo h2 span {
+    color: var(--azulClaro); /* Azul claro */
+}
+
+/* Sección de biografía con flexbox */
+#biografia {
+    display: flex; /* Usa flexbox para el diseño */
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-between; /* Espacia los elementos horizontalmente */
+    gap: 20px; /* Espaciado entre los elementos */
+    padding: 40px; /* Relleno interno */
+    background: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 900px; /* Ancho máximo de 900px */
+    margin: 40px auto; /* Margen superior e inferior de 40px, centrado horizontalmente */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para la sección de texto */
+.bio-texto {
+    flex: 1; /* Ocupa más espacio dentro del contenedor flexible */
+    color: #222; /* Color de texto oscuro */
+}
+
+/* Título dentro de la sección de texto */
+.bio-texto h2 {
+    color: #ff4500; /* Color naranja */
+    font-size: 28px; /* Tamaño de fuente */
+}
+
+/* Párrafos dentro de la sección de texto */
+.bio-texto p {
+    font-size: 18px; /* Tamaño de fuente */
+    line-height: 1.6; /* Espaciado entre líneas */
+    text-align: justify; /* Justificación del texto */
+}
+
+/* Estilo para la sección de imagen */
+.bio-imagen {
+    flex: 0.5; /* Ocupa menos espacio en comparación con el texto */
+    text-align: center; /* Centra la imagen horizontalmente */
+}
+
+/* Imagen dentro de la sección */
+.bio-imagen img {
+    width: 100%; /* La imagen ocupa el 100% de su contenedor */
+    max-width: 250px; /* Ancho máximo de 250px */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    transition: transform 0.3s ease-in-out; /* Efecto de transición suave */
+}
+
+
+/* Efecto hover en la imagen */
+.bio-imagen img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #biografia {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px; /* Reducir el padding */
+        max-width: 90%; /* Ajustar el tamaño para no ocupar toda la pantalla */
+        margin: 20px auto;
+    }
+
+    .bio-texto {
+        order: 2;
+        max-width: 80%; /* Reducir el ancho del texto */
+        font-size: 14px;
+    }
+
+    .bio-texto h2 {
+        font-size: 20px; /* Hacer el título más pequeño */
+    }
+
+    .bio-texto p {
+        font-size: 14px; /* Reducir el tamaño del texto */
+        line-height: 1.4;
+    }
+
+    .bio-imagen {
+        order: 1;
+        margin-bottom: 10px;
+    }
+
+    .bio-imagen img {
+        max-width: 60%; /* Hacer la imagen más pequeña */
+    }
+}
 .contenido-navegacion{
    display: flex;
    align-items: center;/*Alineacion vertical*/
@@ -119,95 +243,133 @@ header {
    position: relative; /* Asegura que no interfiera */
    z-index: 1000;
 }
-.navegacion{
-    background-color: var(--blanco);
-    position: absolute;
-    left: 0;
-    top: 70px;
-    width: 100%;
-    animation: desplazamiento .5s ease-in-out;
-    z-index: 1001;
+/* Estilo para la barra de navegación */
+.navegacion {
+    background-color: var(--blanco); /* Fondo blanco */
+    position: absolute; /* Posición absoluta con respecto al contenedor padre */
+    left: 0; /* Anclado a la izquierda */
+    top: 70px; /* Distancia de 70px desde la parte superior */
+    width: 100%; /* Ancho completo */
+    animation: desplazamiento 0.5s ease-in-out; /* Animación de desplazamiento */
+    z-index: 1001; /* Capa superior para que esté sobre otros elementos */
 }
-@media(min-width:768px){
-    .ocultar{
-        display: inline;
+
+/* En pantallas mayores a 768px, muestra los elementos ocultos */
+@media (min-width: 768px) {
+    .ocultar {
+        display: inline; /* Muestra los elementos en línea */
     }
 }
-.navegacion a{
-    display: block;
-    font-size: 2rem;
-    padding: 1.1rem;
-    color: var(--oscuro);
-    text-decoration: none;
-    transition: background-color .3s ease-in-out;
+
+/* Estilo para los enlaces dentro de la navegación */
+.navegacion a {
+    display: block; /* Cada enlace ocupa una línea completa */
+    font-size: 2rem; /* Tamaño de fuente */
+    padding: 1.1rem; /* Espaciado interno */
+    color: var(--oscuro); /* Texto en color oscuro */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease-in-out; /* Transición suave del color de fondo */
 }
-.navegacion a:hover{
-    background-color: var(--azulClaro);
-    color: var(--blanco);
+
+/* Cambio de color al pasar el cursor sobre los enlaces */
+.navegacion a:hover {
+    background-color: var(--azulClaro); /* Fondo azul claro */
+    color: var(--blanco); /* Texto blanco */
 }
-@media(min-width:768px){
-    .navegacion a{
-        display: inline;
+
+/* En pantallas mayores a 768px, muestra los enlaces en línea */
+@media (min-width: 768px) {
+    .navegacion a {
+        display: inline; /* Los enlaces se alinean en la misma línea */
     }
 }
-@media(min-width:768px){
+
+/* Ajuste de la barra de navegación en pantallas grandes */
+@media (min-width: 768px) {
     .navegacion {
-        position: relative;
-        top: unset;
-        width: auto;
-        background-color: unset;
-        animation: unset;
-    }
-}
-.hamburguesa span{
-    width: 5rem;
-    height: 1rem;
-    border: 3px solid white;
-    background-color: var(--oscuro);
-    display: block;
-}
-@media(min-width: 768px){
-    .hamburguesa{
-        display: none;
+        position: relative; /* Posición relativa para integrarse en el flujo del documento */
+        top: unset; /* Anula el valor de 'top' */
+        width: auto; /* Ancho automático según el contenido */
+        background-color: unset; /* Sin color de fondo */
+        animation: unset; /* Anula la animación */
     }
 }
 
+/* Estilo para las líneas del ícono de hamburguesa */
+.hamburguesa span {
+    width: 5rem; /* Ancho de 5rem */
+    height: 1rem; /* Altura de 1rem */
+    border: 3px solid white; /* Borde blanco de 3px */
+    background-color: var(--oscuro); /* Fondo oscuro */
+    display: block; /* Cada línea se muestra como un bloque */
+}
 
+/* Oculta el ícono de hamburguesa en pantallas más grandes */
+@media (min-width: 768px) {
+    .hamburguesa {
+        display: none; /* Oculta el ícono */
+    }
+}
 
+/* Estilo para todas las secciones */
 section {
-    padding: 50px;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeUp 1s ease-in-out forwards;
+    padding: 50px; /* Relleno interno de 50px */
+    text-align: center; /* Texto centrado */
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateY(30px); /* Desplazamiento hacia abajo */
+    animation: fadeUp 1s ease-in-out forwards; /* Animación de desvanecimiento hacia arriba */
 }
 
+/* Definición de la animación 'fadeUp' */
 @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
+    from { 
+        opacity: 0; /* Comienza invisible */
+        transform: translateY(30px); /* Desplazamiento hacia abajo */
+    }
+    to { 
+        opacity: 1; /* Se vuelve completamente visible */
+        transform: translateY(0); /* Se mueve a su posición original */
+    }
 }
 
-
-.xion h2{
-    font-size: 2rem;
-    color: #039e1a;
+/* Estilo para los encabezados h2 dentro de la clase 'xion' */
+.xion h2 {
+    font-size: 2rem; /* Tamaño de fuente de 2rem */
+    color: #039e1a; /* Color verde */
 }
+
 
 
 /*Seccion servicios*/
 .servicios{
     padding-top: 3rem;
+    text-align: center;
 }
 .servicios h2{
     font-size: 3rem;
     text-align: center;
+    margin-bottom: 2rem;
     color: var(--azulClaro);
 }
-@media(min-width: 768px){
-    .contenido-servicios{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 2rem;
+.contenido-servicios {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr; /* 📌 Por defecto, una columna (para móviles) */
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px; /* 📌 Evita que los elementos choquen con los bordes en móviles */
+}
+
+/* 📌 Cuando la pantalla sea grande (tablets en adelante), mostramos en columnas */
+@media (min-width: 768px) {
+    .contenido-servicios {
+        grid-template-columns: repeat(2, 1fr); /* 📌 Dos columnas en tablets */
+    }
+}
+@media (min-width: 1024px) {
+    .contenido-servicios {
+        grid-template-columns: repeat(3, 1fr); /* 📌 Tres columnas en pantallas grandes */
     }
 }
 .servicio{
@@ -219,8 +381,17 @@ section {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     position: relative;
+    max-width: 100%;
+
 
 }
+@media screen and (max-width: 900px) {
+    .contenido-servicios {
+        flex-direction: column; /* 🆕 En móviles, los discos estarán en columna */
+        align-items: center; /* 🆕 Centra los discos */
+    }
+
+}   
 .servicio img{
     width: 150px;
     height: auto;
@@ -239,6 +410,7 @@ section {
 .info {
     display: none; /* Oculta el contenido al cargar */
     text-align: center;
+    padding: 10px 0;
 }
 
 .info.show {
@@ -247,92 +419,127 @@ section {
     align-items: center;
 }
 
+/* Estilo para el botón con clase 'toggle-btn' dentro de '.servicio' */
 .servicio .toggle-btn {
-    background: linear-gradient(45deg, #000000, #000000);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 30px;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 5px 15px rgba(255, 117, 140, 0.5);
-    position: relative;
-    overflow: hidden;
+    background: linear-gradient(45deg, #000000, #000000); /* Fondo con degradado negro */
+    color: white; /* Texto en blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    margin-top: 10px; /* Margen superior */
+    cursor: pointer; /* Cursor tipo puntero */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    border-radius: 30px; /* Bordes redondeados */
+    transition: all 0.3s ease-in-out; /* Transición suave */
+    box-shadow: 0 5px 15px rgba(255, 117, 140, 0.5); /* Sombra con tono rosado */
+    position: relative; /* Posición relativa para controlar el pseudo-elemento */
+    overflow: hidden; /* Oculta el desbordamiento del pseudo-elemento */
 }
+
+/* Efecto brillante que se desplaza de izquierda a derecha */
 .servicio .toggle-btn::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    transition: left 0.3s ease-in-out;
+    content: ""; /* Contenido vacío */
+    position: absolute; /* Posición absoluta dentro del botón */
+    top: 0; /* Anclado arriba */
+    left: -100%; /* Fuera de la vista, hacia la izquierda */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    background: rgba(255, 255, 255, 0.2); /* Efecto de brillo semitransparente */
+    transition: left 0.3s ease-in-out; /* Transición suave del movimiento */
 }
+
+/* Al pasar el cursor, el brillo se desplaza hacia la derecha */
 .servicio .toggle-btn:hover::after {
-    left: 100%;
+    left: 100%; /* Mueve el pseudo-elemento completamente a la derecha */
 }
+
+/* Al pasar el cursor, cambia el color de fondo, aumenta de tamaño y la sombra */
 .servicio .toggle-btn:hover {
-    background: #176e3b;
-    transform: scale(1.1);
-    box-shadow: 0 8px 20px rgba(255, 117, 140, 0.7);
+    background: #176e3b; /* Cambia a un verde oscuro */
+    transform: scale(1.1); /* Aumenta el tamaño */
+    box-shadow: 0 8px 20px rgba(255, 117, 140, 0.7); /* Sombra más intensa */
 }
+
+/* Al hacer clic, reduce el tamaño y la sombra */
 .servicio .toggle-btn:active {
-    transform: scale(0.95);
-    box-shadow: 0 3px 10px rgba(255, 117, 140, 0.9);
+    transform: scale(0.95); /* Reduce ligeramente el tamaño */
+    box-shadow: 0 3px 10px rgba(255, 117, 140, 0.9); /* Sombra más pequeña e intensa */
 }
+
+/* Al pasar el cursor sobre '.servicio', rota y escala la imagen */
 .servicio:hover img {
-    transform: rotate(10deg) scale(1.1);
+    transform: rotate(10deg) scale(1.1); /* Rotación de 10 grados y escala al 110% */
 }
-.servicio h5{
-    font-size: 16px;
-    margin: 5px 0;
-    font-weight: lighter;
-    letter-spacing: 1px;
-    opacity: 0.7;
-    text-align: center;
+
+/* Estilo para los títulos h4 dentro de '.servicio' */
+.servicio h4 {
+    font-size: 1rem; /* Tamaño de fuente pequeño */
+    margin: 2px 0; /* Margen superior e inferior de 2px */
+    font-weight: normal; /* Peso de fuente normal */
+    opacity: 0.9; /* Ligera transparencia */
 }
-.servicio p{
-    font-size: 18px;
-    margin: 5px 0;
-    opacity: 0.8;
+
+/* Estilo para los títulos h5 dentro de '.servicio' */
+.servicio h5 {
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 5px 0; /* Margen superior e inferior de 5px */
+    font-weight: lighter; /* Peso de fuente ligero */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    opacity: 0.7; /* Transparencia */
+    text-align: center; /* Texto centrado */
 }
-@media(min-width: 768px){
-    .servicio p{
-        text-align: left;
+
+/* Estilo para los párrafos dentro de '.servicio' */
+.servicio p {
+    font-size: 18px; /* Tamaño de fuente */
+    margin: 5px 0; /* Margen superior e inferior de 5px */
+    opacity: 0.8; /* Transparencia */
+}
+
+/* En pantallas de al menos 768px de ancho, alinea el texto del párrafo a la izquierda */
+@media (min-width: 768px) {
+    .servicio p {
+        text-align: left; /* Alineación a la izquierda */
     }
 }
-@media(min-width: 768px){
-    .servicio:hover{
-        cursor: pointer;
+
+/* En pantallas de al menos 768px de ancho, al pasar el cursor sobre '.servicio' */
+@media (min-width: 768px) {
+    .servicio:hover {
+        cursor: pointer; /* Cambia el cursor a puntero */
     }
-    .servicio:hover .fas{
-        background-color: var(--azulOscuro);
+
+    /* Cambia el color de fondo del ícono con clase 'fas' */
+    .servicio:hover .fas {
+        background-color: var(--azulOscuro); /* Fondo azul oscuro */
     }
 }
+
+/* En pantallas de hasta 600px de ancho */
 @media screen and (max-width: 600px) {
     .servicio {
-        max-width: 100%; /* Los servicios ocupan el 100% del contenedor */
-        padding: 15px; /* Ajusta el padding */
+        padding: 15px; /* Relleno interno de 15px */
     }
 
     .servicio img {
-        width: 120px; /* Tamaño de imagen ajustado para móviles */
+        width: 100px; /* Ancho máximo de la imagen */
+    }
+
+    .servicio h3 {
+        font-size: 1.2rem; /* Tamaño de fuente reducido */
     }
 
     .servicio .toggle-btn {
-        font-size: 14px; /* Ajusta el tamaño de la fuente */
-        padding: 10px 20px;
-        width: 100%; /* El botón ocupa todo el ancho */
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+        padding: 8px 15px; /* Relleno interno */
+        width: 100%; /* Ancho completo */
     }
 
     .servicios h2 {
-        font-size: 2rem; /* Ajusta el tamaño de texto del título */
+        font-size: 2rem; /* Tamaño de fuente para el encabezado h2 */
     }
 }
+
 /****** Estilos generales ******/
 .seccion {
     padding: 50px 10%;
@@ -342,37 +549,45 @@ section {
 
 
 /****** Sección de Colaboraciones ******/
+/* Estilo para la sección con ID 'colaboraciones' */
 #colaboraciones {
     background: #1a1a1a; /* Fondo oscuro elegante */
-    padding: 60px 10%;
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 60px 10%; /* Relleno interno con 60px arriba/abajo y 10% a los lados */
+    text-align: center; /* Texto centrado */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra sutil */
 }
+
+/* Contenedor flexible para los elementos de colaboración */
 .colaboraciones {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+    display: flex; /* Usa flexbox para alinear elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    justify-content: center; /* Alinea los elementos al centro horizontalmente */
+    gap: 20px; /* Espacio entre elementos */
+    margin-top: 20px; /* Margen superior */
 }
+
+/* Estilo para los títulos h2 dentro de la sección 'colaboraciones' */
 #colaboraciones h2 {
-    font-size: 2.5rem;
-    color: #ffcc00;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.7);
-    margin-bottom: 10px;
-    animation: fadeIn 1.5s ease-in-out;
+    font-size: 2.5rem; /* Tamaño de fuente grande */
+    color: #ffcc00; /* Color amarillo */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.7); /* Sombra amarilla */
+    margin-bottom: 10px; /* Margen inferior */
+    animation: fadeIn 1.5s ease-in-out; /* Animación de aparición */
 }
+
+/* Estilo para los párrafos dentro de 'colaboraciones' */
 #colaboraciones p {
-    font-size: 1.2rem;
-    color: #ffffff;
-    font-style: italic;
-    margin-bottom: 30px;
-    opacity: 0.9;
-    animation: slideUp 1s ease-in-out;
+    font-size: 1.2rem; /* Tamaño de fuente */
+    color: #ffffff; /* Color blanco */
+    font-style: italic; /* Texto en cursiva */
+    margin-bottom: 30px; /* Margen inferior */
+    opacity: 0.9; /* Ligera transparencia */
+    animation: slideUp 1s ease-in-out; /* Animación de deslizamiento hacia arriba */
 }
+
 /* Animaciones */
 @keyframes fadeIn {
     from {
@@ -395,77 +610,84 @@ section {
         transform: translateY(0);
     }
 }
+/* Estilo para la tarjeta de colaboración */
 .colab {
-    background: linear-gradient(135deg, #8c4b0088, #5c2645);
-    padding: 15px;
-    border-radius: 10px;
-    width: 180px;
-    text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(135deg, #8c4b0088, #5c2645); /* Degradado en diagonal */
+    padding: 15px; /* Relleno interno */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 180px; /* Ancho fijo */
+    text-align: center; /* Texto centrado */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para escala y sombra */
 }
 
+/* Estilo para la imagen dentro de '.colab' */
 .colab img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+    width: 100%; /* Ancho completo del contenedor */
+    height: 180px; /* Altura fija */
+    object-fit: cover; /* Asegura que la imagen cubra sin distorsionarse */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
 }
 
+/* Estilo para el título h3 dentro de '.colab' */
 .colab h3 {
-    margin-top: 10px;
-    font-size: 1.1rem;
-    color: #fff;
-    font-weight: bold;
+    margin-top: 10px; /* Espacio superior */
+    font-size: 1.1rem; /* Tamaño de fuente */
+    color: #fff; /* Color blanco */
+    font-weight: bold; /* Fuente en negrita */
 }
 
+/* Efecto al pasar el cursor sobre '.colab' */
 .colab:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
 }
 
+/* Efecto al pasar el cursor sobre la imagen dentro de '.colab' */
 .colab:hover img {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen */
 }
+
 /****** Sección de Videos ******/
 #videos {
     background: #121212; /* Fondo oscuro para resaltar los videos */
-    padding: 60px 10%;
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 60px 10%; /* Relleno interno con 60px arriba/abajo y 10% a los lados */
+    text-align: center; /* Centra el texto */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra sutil */
 }
 
 /* Título de la sección */
 #videos h2 {
-    font-size: 2.5rem;
-    color: #ff4444;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 5px rgba(255, 68, 68, 0.7);
-    margin-bottom: 15px;
-    animation: fadeIn 1.5s ease-in-out;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
+    font-size: 2.5rem; /* Tamaño de fuente grande */
+    color: #ff4444; /* Rojo vibrante */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-shadow: 2px 2px 5px rgba(255, 68, 68, 0.7); /* Sombra ligera */
+    margin-bottom: 15px; /* Espacio debajo del título */
+    animation: fadeIn 1.5s ease-in-out; /* Animación de aparición */
+    display: inline-flex; /* Alinea ícono y texto horizontalmente */
+    align-items: center; /* Alineación vertical */
+    gap: 10px; /* Espacio entre el ícono y el texto */
 }
 
-/* Icono junto al título */
+/* Icono de cámara antes del texto del título */
 #videos h2::before {
-    content: "🎥";
-    font-size: 2.8rem;
+    content: "🎥"; /* Ícono de cámara */
+    font-size: 2.8rem; /* Tamaño del ícono */
 }
 
 /* Descripción de la sección */
 #videos p {
-    font-size: 1.2rem;
-    color: #ffffff;
-    font-style: italic;
-    margin-bottom: 30px;
-    opacity: 0.9;
-    animation: slideUp 1s ease-in-out;
+    font-size: 1.2rem; /* Tamaño de la fuente */
+    color: #ffffff; /* Texto blanco */
+    font-style: italic; /* Texto en cursiva */
+    margin-bottom: 30px; /* Espacio debajo del párrafo */
+    opacity: 0.9; /* Ligera transparencia */
+    animation: slideUp 1s ease-in-out; /* Animación de deslizamiento hacia arriba */
 }
+
 
 /* Animaciones */
 @keyframes fadeIn {
@@ -538,36 +760,88 @@ footer {
     text-shadow: 3px 3px 10px rgba(255, 204, 0, 0.7); /* Sombra para dar efecto de brillo */
     margin-bottom: 20px; /* Espaciado inferior */
 }
+/* Estilo para la sección de la galería */
 .galeria {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #111;
-    color: white;
-    overflow: hidden;
+    text-align: center; /* Centra el texto */
+    padding: 50px 20px; /* Espaciado interno */
+    background-color: #111; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    overflow: hidden; /* Evita que el contenido desborde */
 }
+
+/* Contenedor del carrusel */
 .carrusel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    max-width: 800px;
-    height: auto;
-    margin: 0 auto;
+    width: 100%; /* Ocupa todo el ancho */
+    overflow: hidden; /* Oculta el contenido que se sale del contenedor */
+    display: flex; /* Usa flexbox para alinear */
+    justify-content: center; /* Centra horizontalmente */
 }
+
+/* Contenedor interno que aloja las imágenes */
 .carrusel-contenedor {
-    display: flex;
-    width: max-content;
-    animation: deslizar 50s linear infinite;
-    gap: 50px;
+    display: flex; /* Usa flexbox para alinear las imágenes */
+    width: max-content; /* Ajusta el ancho al contenido */
+    animation: deslizar 50s linear infinite; /* Animación de desplazamiento continuo */
+    gap: 50px; /* Espacio entre imágenes */
 }
+
+/* Estilo para las imágenes del carrusel */
 .imagen-carrusel {
-    width: auto;
-        height: 300px;
-        max-height: 100%;
-        object-fit: contain;
-        flex-shrink: 0;
-        margin-right: 10px;
-        cursor: pointer;
+    width: auto; /* Ancho automático */
+    height: 300px; /* Altura fija */
+    max-height: 100%; /* No excede la altura del contenedor */
+    object-fit: contain; /* Mantiene la proporción sin deformar */
+    flex-shrink: 0; /* Evita que las imágenes se reduzcan */
+    margin-right: 10px; /* Espacio a la derecha */
+    cursor: pointer; /* Cambia el cursor a una mano */
 }
+
+/* Efecto de zoom al pasar el cursor sobre la imagen */
+.imagen-carrusel:hover {
+    transform: scale(1.1); /* Aumenta el tamaño ligeramente */
+}
+
+/* Estilo para el modal (ventana emergente) */
+.modal {
+    display: none; /* Oculta el modal por defecto */
+    position: fixed; /* Posición fija para cubrir toda la pantalla */
+    z-index: 1000; /* Coloca el modal por encima de otros elementos */
+    left: 0; /* Alineado a la izquierda */
+    top: 0; /* Alineado arriba */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente oscuro */
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Oculta el modal cuando no está activo */
+.modal:target {
+    display: none; /* No muestra el modal */
+    visibility: hidden; /* Lo hace invisible */
+}
+
+/* Contenido del modal */
+.modal-contenido {
+    max-width: 80vw; /* Ancho máximo del 80% de la ventana */
+    max-height: 80vh; /* Altura máxima del 80% de la ventana */
+    border-radius: 15px; /* Bordes redondeados */
+    border: 5px solid #fff; /* Borde blanco */
+    object-fit: contain; /* Mantiene la proporción sin deformar */
+}
+
+/* Estilo del botón para cerrar el modal */
+.cerrar {
+    position: absolute; /* Posición absoluta respecto al modal */
+    top: 15px; /* Distancia desde la parte superior */
+    right: 25px; /* Distancia desde la derecha */
+    font-size: 40px; /* Tamaño del icono */
+    color: white; /* Color blanco */
+    cursor: pointer; /* Cambia el cursor a una mano */
+    font-weight: bold; /* Texto en negrita */
+}
+
 @keyframes deslizar {
     0% { transform: translateX(0%); }
     100% { transform: translateX(-50%); }
@@ -583,4 +857,14 @@ footer {
         height: 150px; /* Aún más pequeña en pantallas reducidas */
     }
 }
+.footer .logo h2, .footer p{
+    text-align: center;
+}
 
+@media(min-width: 768px){
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
