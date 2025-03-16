@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!-- Declaración del tipo de documento y el idioma (español) -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Artista Favorito</title>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración para diseño responsivo -->
+    <title>Mi Artista Favorito</title> <!-- Título de la página -->
+
+        <!-- Preconexión a Google Fonts para mejorar la velocidad de carga -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    
+        <!-- Importación de fuentes desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+            <!-- Enlace a hojas de estilo CSS -->
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
+
+        <!-- Encabezado de la página -->
     <header class="encabezado">
         <div class="contenido-navegacion">
             <div class="logo">
+                 <!-- Logo del artista -->
                 <h2>Xion <span>MC</span></h2>
             </div>
+            <!-- Barra de navegación -->    
             <nav class="navegacion ocultar">
                 <a href="#">Inicio</a>
                 <a href="#biografia">Biografia</a>
@@ -28,6 +37,7 @@
                 <a href="#colaboraciones">Colaboraciones</a>
                 <a href="#videos">Videos</a>
             </nav>
+            <!-- Icono de menú hamburguesa para dispositivos móviles -->
             <div class="hamburguesa">
                 <span></span>
                 <span></span>
@@ -36,47 +46,43 @@
         </div>
     </header>
     
-    
-
-    <!-- <header> 
-    <h1>🎵 Mi Artista Favorito 🎶</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#biografia">Biografía</a></li>
-                <li><a href="#discografia">Discografía</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#videos">Videos</a></li>
-            </ul>
-        </nav>
-    </header>
--->
+   <!-- Sección de inicio -->
     <section id="inicio">
         <h2></h2>
         <p></p>
     </section>
 
+    <!-- Sección de biografía -->
     <section id="biografia">
-        <h2>📖 Biografía</h2>
-        <div class="xion">
-        <h2>Orlando Patricio Peñaloza Abata, conocido con el seudónimo de "Xion MC" empezó en el rap a los 15 años de
-            edad, sus primeras influencias en la música eran por raperos Españoles, nació el 9 de junio de 1997 en
-            Ecuador, su niñez no fue nada fácil ya que sus Padres se separaron años después de que él naciera. La etapa
-            del colegio tampoco era la mejor ya que recibía burlas por la música que en ese momento hacia.
-
-            Pero él ya sabia lo que quería no le importaba lo que decían los demás, años después sus primeros éxitos
-            fueron de temáticas de anime como Dragon Ball Z, pero por problemas de copyright casi pierde todo su
-            contenido en Youtube. Al borde de no saber que hacer decide cambiar sus temáticas a temas sentimentales los
-            cuales dieron frutos, como las canciones "Todo terminó" y "Me duele tanto recordarte" los pilares
-            fundamentes del canal hasta hoy en día, tambien tiene otros éxitos con mayor calidad como "Fuiste tú"
-            "Falsas promesas" y "Amor sin fronteras" sus canciones actuales contiene anime para relacionar su música con
-            situaciones de la vida real, es uno de los primeros canales que se mantiene con esa combinación. Ya está 8
-            años en la música a su vez que superó el millón de suscriptores en Youtube y contiene mas de +200 canciones
-            en su repertorio.</h2>
-        <img src="img/xionmc.jpg" alt="Imagen del artista" style="width:15%; border-radius: 10px;">
-    </div>
+        <div class="bio-texto">
+            <h2>📖 Biografía</h2>
+            <!-- Texto de la biografía-->
+            <p>
+                <strong>Orlando Patricio Peñaloza Abata</strong>, conocido con el seudónimo de <strong>"Xion MC"</strong>,
+                empezó en el rap a los 15 años de edad. Sus primeras influencias en la música fueron raperos españoles.
+                Nació el <strong>9 de junio de 1997</strong> en Ecuador. Su niñez no fue nada fácil, ya que sus padres se separaron años después de su nacimiento.
+                <br><br>
+                La etapa del colegio tampoco fue la mejor, pues recibía burlas por la música que hacía en ese momento. Sin embargo, 
+                él ya sabía lo que quería y no le importaban las críticas. Años después, sus primeros éxitos fueron de temáticas 
+                de anime como <strong>Dragon Ball Z</strong>, pero por problemas de copyright casi pierde todo su contenido en YouTube.
+                <br><br>
+                Al borde de la incertidumbre, decidió cambiar su enfoque a temas sentimentales, logrando grandes éxitos como 
+                <strong>"Todo terminó"</strong> y <strong>"Me duele tanto recordarte"</strong>. Estas canciones se convirtieron 
+                en los pilares fundamentales de su canal. También ha lanzado otros hits como <strong>"Fuiste tú"</strong>, 
+                <strong>"Falsas promesas"</strong> y <strong>"Amor sin fronteras"</strong>.
+                <br><br>
+                Actualmente, sigue fusionando el anime con situaciones de la vida real, siendo uno de los primeros artistas 
+                en mantener esta combinación. Con más de <strong>8 años en la música</strong>, ha superado el millón de 
+                suscriptores en YouTube y cuenta con más de <strong>200 canciones</strong> en su repertorio.
+            </p>
+        </div>
+        <div class="bio-imagen">
+            <!-- Imagen del artista-->
+            <img src="img/xionmc.jpg" alt="Imagen del artista">
+        </div>
     </section>
-
+    
+<!-- Sección de discografía -->
     <section id="discografia">
 
         <ul>
@@ -84,27 +90,38 @@
                 <h2>🎶 Discografía</h2>
                 <div class="contenido-servicios">
                     <div class="servicio">
+                        <!-- Imagen del álbum-->
                         <img class="fas" src="img/frecuencia.png" alt="Frecuencia" onclick="window.location.href='disco/frecuencia.html';">
+                        <!-- Título del álbum-->
                         <h3>Frecuencias del corazón</h3>
                         <div class="info">
+                        <!-- Cantidad de Canciones-->
                         <p>7 canciones</p>
+                        <!-- Canciones-->
                         <h4>- Nuestro Cuento de Amor</h4>
                         <h4>- Me Perdiste</h4>
                         <h4>- Duele Saber Que No Estás</h4>
                         <h4>- Mi Vida Eres Tú</h4>
                         <h4>- Promesas a la Luna</h4>
                         <h4>- Encontré a una Princesa</h4>
-                        <h4>- Te Amo al Mirarte</h4>
+                        <h4>- Te Amo al Mirarte</h4><br>
                         <h5>2025</h5>
                     </div>
+
+                     <!-- Botón para abrir las demás canciones dentro-->
                     <button class="toggle-btn">Ver más</button>
                     </div>
                     
+                    <!-- Clase Servicio CSS-->
                     <div class="servicio">
+                         <!-- Imagen del álbum-->
                         <img class="fas" src="img/sentimientos.png" alt="Sentimientos" onclick="window.location.href='disco/sentimientos.html';">
+                        <!-- Título del álbum-->
                         <h3>Sentimientos Encontrados</h3>
                         <div class="info">
+                        <!-- Cantidad de Canciones-->
                         <p>10 canciones</p>
+                        <!-- Canciones-->
                         <h4>- Me vas a Extrañar 2.0</h4>
                         <h4>- Dime por Que me Dejaste?</h4>
                         <h4>- Me tienes Confundido</h4>
@@ -117,14 +134,22 @@
                         <h4>- Te Quiero por Mil Razones</h4>
                         <h5>2024</h5>
                         </div>
+
+                        <!-- Botón para abrir las demás canciones dentro-->
                         <button class="toggle-btn">Ver más</button> 
 
                     </div>
+
+                    <!-- Clase Servicio CSS-->
                     <div class="servicio">
+                         <!-- Imagen del álbum-->
                         <img class="fas" src="img/rap3.png" alt="Romantico3" onclick="window.location.href='disco/rap3.html';">
+                        <!-- Título del álbum-->
                         <h3>Rap Romántico Vol. 3</h3>
                         <div class="info">
+                        <!-- Cantidad de Canciones-->
                         <p>14 canciones</p>
+                        <!-- Canciones-->
                         <h4>- Llorando Al Cielo</h4>
                         <h4>- Sólo Mentías</h4>
                         <h4>- Mi Gran Amor</h4>
@@ -140,14 +165,22 @@
                         <h4>- Despedida Triste</h4>
                         <h5>2023</h5>
                         </div>
+
+                        <!-- Botón para abrir las demás canciones dentro-->
                         <button class="toggle-btn">Ver más</button>
 
                     </div>
+
+                    <!-- Clase Servicio CSS-->
                     <div class="servicio">
+                         <!-- Imagen del álbum-->
                         <img class="fas" src="img/sadboy.png" alt="Sadboy" onclick="window.location.href='disco/sadboy.html';">
+                        <!-- Título del álbum-->
                         <h3>Sadboy</h3>
                         <div class="info">
+                        <!-- Cantidad de Canciones-->
                         <p>7 canciones</p>
+                        <!-- Canciones-->
                         <h4>- Ella es 1</h4>
                         <h4>- Seré Tu Ángel</h4>
                         <h4>- Te Pido Perdón</h4>
@@ -157,14 +190,22 @@
                         <h4>- Vuelve 1</h4>
                         <h5>2022</h5>
                         </div>
+
+                        <!-- Botón para abrir las demás canciones dentro-->
                         <button class="toggle-btn">Ver más</button>
 
                     </div>
+
+                    <!-- Clase Servicio CSS-->
                     <div class="servicio">
+                         <!-- Imagen del álbum-->
                         <img class="fas" src="img/desamor.png" alt="Desamor" onclick="window.location.href='disco/desamor.html';">
+                        <!-- Título del álbum-->
                         <h3>Amor y Desamor</h3>
                         <div class="info">
+                        <!-- Cantidad de Canciones-->
                         <p>12 canciones</p>
+                        <!-- Canciones-->
                         <h4>- Fingiste Amarme</h4>
                         <h4>- Me Recordarás</h4>
                         <h4>- Te Digo Adiós</h4>
@@ -179,14 +220,22 @@
                         <h4>- De Que Me Sirve Amarte?</h4>
                         <h5>2022</h5>
                         </div>
+
+                        <!-- Botón para abrir las demás canciones dentro-->
                         <button class="toggle-btn">Ver más</button>
 
                     </div>
+
+                    <!-- Clase Servicio CSS-->
                     <div class="servicio">
+                         <!-- Imagen del álbum-->
                         <img class="fas" src="img/etapas.png" alt="Etapas" onclick="window.location.href='disco/etapas.html';">
+                        <!-- Título del álbum-->
                         <h3>Etapas del Amor</h3>
                         <div class="info">
+                        <!-- Cantidad de Canciones-->
                         <p>9 canciones</p>
+                        <!-- Canciones-->
                         <h4>- Perdí Mi Tiempo Contigo</h4>
                         <h4>- Me Cambiaste por Otro</h4>
                         <h4>- No Puedo Amarte a Ti</h4>
@@ -198,14 +247,22 @@
                         <h4>- Vete Con Él</h4>
                         <h5>2021</h5>
                         </div>
+
+                        <!-- Botón para abrir las demás canciones dentro-->
                         <button class="toggle-btn">Ver más</button>
 
                     </div>
+
+                    <!-- Clase Servicio CSS-->
                     <div class="servicio">
+                         <!-- Imagen del álbum-->
                         <img class="fas" src="img/llore.png" alt="Superar" onclick="window.location.href='disco/superar.html';">
+                        <!-- Título del álbum-->
                         <h3>Llore y te superé</h3>
                         <div class="info">
+                        <!-- Cantidad de Canciones-->
                         <p>14 canciones</p>
+                        <!-- Canciones-->
                         <h4>- Juntos por Siempre</h4>
                         <h4>- Amigos y Nada Más</h4>
                         <h4>- La Carta Más Triste</h4>
@@ -222,14 +279,22 @@
                         <h4>- Me Dejaste de Querer</h4>
                         <h5>2021</h5>
                         </div>
+
+                        <!-- Botón para abrir las demás canciones dentro-->
                         <button class="toggle-btn">Ver más</button>
 
                     </div>
+
+                    <!-- Clase Servicio CSS-->
                     <div class="servicio">
+                         <!-- Imagen del álbum-->
                         <img class="fas" src="img/mal.png" alt="Mal" onclick="window.location.href='disco/mal.html';">
+                        <!-- Título del álbum-->
                         <h3>Mal del Amor</h3>
                         <div class="info">
+                        <!-- Cantidad de Canciones-->
                         <p>7 canciones</p>
+                        <!-- Canciones-->
                         <h4>- Me Enamoré de la Persona Incorrecta</h4>
                         <h4>- Como Pude Enamorarme de Ti</h4>
                         <h4>- Canción al Mar</h4>
@@ -239,14 +304,22 @@
                         <h4>- Amarte Duele</h4>
                         <h5>2020</h5>
                         </div>
+
+                        <!-- Botón para abrir las demás canciones dentro-->
                         <button class="toggle-btn">Ver más</button>
 
                     </div>
+
+                    <!-- Clase Servicio CSS-->
                     <div class="servicio">
+                         <!-- Imagen del álbum-->
                         <img class="fas" src="img/enamorar.png" alt="Sentimientos">
+                        <!-- Título del álbum-->
                         <h3>No me vuelvo a Enamorar</h3>
                         <div class="info">
+                        <!-- Cantidad de Canciones-->
                         <p>20 canciones</p>
+                        <!-- Canciones-->
                         <h4>- No Vuelvas Más</h4>
                         <h4>- Como Pides Regresar</h4>
                         <h4>- No Puedo Perdonarte</h4>
@@ -269,14 +342,22 @@
                         <h4>- Quiero Confesarte Que 1 & 2</h4>
                         <h5>2020</h5>
                         </div>
+
+                        <!-- Botón para abrir las demás canciones dentro-->
                         <button class="toggle-btn">Ver más</button>
 
                     </div>
+
+                    <!-- Clase Servicio CSS-->
                     <div class="servicio">
+                         <!-- Imagen del álbum-->
                         <img class="fas" src="img/triste.png" alt="Triste" onclick="window.location.href='disco/triste.html';">
+                        <!-- Título del álbum-->
                         <h3>El rap más triste</h3>
                         <div class="info">
+                        <!-- Cantidad de Canciones-->
                         <p>11 canciones</p>
+                        <!-- Canciones-->
                         <h4>- Falsas Promesas</h4>
                         <h4>- Como Olvidarte</h4>
                         <h4>- Que Paso?</h4>
@@ -290,14 +371,22 @@
                         <h4>- Nadie Como Tú</h4>
                         <h5>2019</h5>
                         </div>
+
+                        <!-- Botón para abrir las demás canciones dentro-->
                         <button class="toggle-btn">Ver más</button>
 
                     </div>
+
+                    <!-- Clase Servicio CSS-->
                     <div class="servicio">
+                         <!-- Imagen del álbum-->
                         <img class="fas" src="img/amarte.png" alt="Amarte" onclick="window.location.href='disco/amarte.html';">
+                        <!-- Título del álbum-->
                         <h3>Amarte hasta el final</h3>
                         <div class="info">
+                        <!-- Cantidad de Canciones-->
                         <p>11 canciones</p>
+                        <!-- Canciones-->
                         <h4>- Tu Orgullo Ganó</h4>
                         <h4>- Amor de Lejos</h4>
                         <h4>- Desde Tu Adios</h4>
@@ -311,14 +400,22 @@
                         <h4>- Terminemos Con Nuestro Amor</h4>
                         <h5>2019</h5>
                         </div>
+
+                        <!-- Botón para abrir las demás canciones dentro-->
                         <button class="toggle-btn">Ver más</button>
 
                     </div>
+
+                    <!-- Clase Servicio CSS-->
                     <div class="servicio">
+                         <!-- Imagen del álbum-->
                         <img class="fas" src="img/sencillo.png" alt="Sencillo" onclick="window.location.href='disco/sencillo.html';">
+                        <!-- Título del álbum-->
                         <h3>Sencillo pero Elegante</h3>
                         <div class="info">
+                        <!-- Cantidad de Canciones-->
                         <p>8 canciones</p>
+                        <!-- Canciones-->
                         <h4>- La Niña de Mis Sueños</h4>
                         <h4>- Si Tu No Estas</h4>
                         <h4>- Que es el Amor?</h4>
@@ -329,14 +426,22 @@
                         <h4>- Carta al Cielo</h4>
                         <h5>2019</h5>
                         </div>
+
+                        <!-- Botón para abrir las demás canciones dentro-->
                         <button class="toggle-btn">Ver más</button>
 
                     </div>
+
+                    <!-- Clase Servicio CSS-->
                     <div class="servicio">
+                         <!-- Imagen del álbum-->
                         <img class="fas" src="img/canciones.png" alt="Sentimientos">
+                        <!-- Título del álbum-->
                         <h3>Las canciones más tristes</h3>
                         <div class="info">
+                        <!-- Cantidad de Canciones-->
                         <p>13 canciones</p>
+                        <!-- Canciones-->
                         <h4>- Mi 14 de Febrero</h4>
                         <h4>- Fuiste Tú 2</h4>
                         <h4>- Lloraré</h4>
@@ -352,14 +457,22 @@
                         <h4>- Regalo Inesperado</h4>
                         <h5>2019</h5>
                         </div>
+
+                        <!-- Botón para abrir las demás canciones dentro-->
                         <button class="toggle-btn">Ver más</button>
 
                     </div>
+
+                    <!-- Clase Servicio CSS-->
                     <div class="servicio">
+                         <!-- Imagen del álbum-->
                         <img class="fas" src="img/desamor2.png" alt="Sentimientos">
+                        <!-- Título del álbum-->
                         <h3>Mi Desamor</h3>
                         <div class="info">
+                        <!-- Cantidad de Canciones-->
                         <p>9 canciones</p>
+                        <!-- Canciones-->
                         <h4>- Te Esperaré</h4>
                         <h4>- Me Enamoré de Mi Mejor Amiga</h4>
                         <h4>- Sólo Amigos</h4>
@@ -371,14 +484,22 @@
                         <h4>- Cuando Mires la Luna</h4>
                         <h5>2018</h5>
                         </div>
+
+                        <!-- Botón para abrir las demás canciones dentro-->
                         <button class="toggle-btn">Ver más</button>
 
                     </div>
+
+                    <!-- Clase Servicio CSS-->
                     <div class="servicio">
+                         <!-- Imagen del álbum-->
                         <img class="fas" src="img/rap1.png" alt="Sentimientos">
+                        <!-- Título del álbum-->
                         <h3>Rap Romántico Vol. 1</h3>
                         <div class="info">
+                        <!-- Cantidad de Canciones-->
                         <p>13 canciones</p>
+                        <!-- Canciones-->
                         <h4>- Demasiado Tarde</h4>
                         <h4>- Me Enamoré de Ella</h4>
                         <h4>- Amor Eterno</h4>
@@ -394,14 +515,22 @@
                         <h4>- No Es Amor</h4>
                         <h5>2018</h5>
                         </div>
+
+                        <!-- Botón para abrir las demás canciones dentro-->
                         <button class="toggle-btn">Ver más</button>
 
                     </div>
+
+                    <!-- Clase Servicio CSS-->
                     <div class="servicio">
+                         <!-- Imagen del álbum-->
                         <img class="fas" src="img/siempre.png" alt="Sentimientos">
+                        <!-- Título del álbum-->
                         <h3>Siempre 12</h3>
                         <div class="info">
+                        <!-- Cantidad de Canciones-->
                         <p>24 canciones</p>
+                        <!-- Canciones-->
                         <h4>- Enamorado de Ti</h4>
                         <h4>- Enamorado de Ti 2</h4>
                         <h4>- Enamorado de Ti 3</h4>
@@ -428,6 +557,8 @@
                         <h4>- Amiga, Te Voy a Confesar</h4>
                         <h5>2016</h5>
                         </div>
+
+                        <!-- Botón para abrir las demás canciones dentro-->
                         <button class="toggle-btn">Ver más</button>
 
                     </div>
@@ -438,11 +569,13 @@
         </ul>
     </section>
     
-
+    <!-- Sección de galería -->
     <section id="galeria" class="galeria">
         <h2 class="titulo-galeria">📸 Galería</h2>
+        <!-- Clase carrusel CSS para dar movimiento a las imágenes -->
         <div class="carrusel">
             <div class="carrusel-contenedor" id="carruselContenedor">
+                <!-- Fotos de la galería del artista -->
                 <img src="gale/xion1.jpg" alt="Imagen 1" class="imagen-carrusel">
                 <img src="gale/xion2.jpg" alt="Imagen 2" class="imagen-carrusel">
                 <img src="gale/xion3.jpg" alt="Imagen 3" class="imagen-carrusel">
@@ -457,101 +590,154 @@
                 <img src="gale/xion12.jpg" alt="Imagen 12" class="imagen-carrusel">
             </div>
         </div>
-       
+        <!-- Clase modal CSS -->
+        <div class="modal" id="modal">
+            
+            <span class="cerrar">&times;</span>
+            <img id="imagenModal" class="modal-contenido">
+            
+        </div>
     </section>
+
+    <!-- Script para el carrusel de imágenes -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             let carrusel = document.getElementById("carruselContenedor");
             let imagenes = document.querySelectorAll(".imagen-carrusel");
             imagenes.forEach(img => {
                 let clon = img.cloneNode(true);
-                carrusel.appendChild(clon);
+                carrusel.appendChild(clon); // Duplica imágenes para un efecto continuo
             });
         });
 
         
     </script>
 
+    <!-- Sección de colaboraciones -->  
     <section id="colaboraciones" class="seccion">
         <h2>🎤 Colaboraciones</h2>
         <p>Estos artistas han colaborado con Xion MC a lo largo de su carrera.</p>
+        <!-- Clase colaboraciones CSS -->
         <div class="colaboraciones">
             
+            <!-- Colaborador MC Richix -->
             <div class="colab">
+                <!-- Canal del artista -->
                 <a href="https://www.youtube.com/@McRichix" target="_blank">
+                <!-- Imagen del artista -->
                 <img src="img/mcrichix.jpg" alt="MC Richix" >
                 </a>
+                <!-- Nombre del artista -->
                 <h3>MC Richix</h3>
             </div>
+
+            <!-- Colaborador MC Jozeph -->
             <div class="colab">
+                <!-- Canal del artista -->
                 <a href="https://www.youtube.com/channel/UCEN8-NvQeihcSCfPq2ltPeQ" target="_blank">
+                <!-- Imagen del artista -->
                 <img src="img/jozeph.jpg" alt="Jozeph">
             </a>
+                <!-- Nombre del artista -->
                 <h3>MC Jozeph</h3>
             </div>
+
+            <!-- Colaborador Zckrap -->
             <div class="colab">
+                <!-- Canal del artista -->
                 <a href="https://www.youtube.com/@zckrap" target="_blank">
+                <!-- Imagen del artista -->
                 <img src="img/zckrap.jpg" alt="Zckrap">
                 </a>
+                <!-- Nombre del artista -->
                 <h3>Zckrap</h3>
             </div>
+
+            <!-- Colaborador Signo Rap -->
             <div class="colab">
+                <!-- Canal del artista -->
                 <a href="https://www.youtube.com/channel/UC0JnjGE6dt1m9CBXX4tDOyA" target="_blank">
+                <!-- Imagen del artista -->
                 <img src="img/signo.jpg" alt="Signo">
                 </a>
+                <!-- Nombre del artista -->
                 <h3>Signo Rap</h3>
             </div>
+
+            <!-- Colaboradora Jennix -->
             <div class="colab">
+                <!-- Canal del artista -->
                 <a href="https://www.youtube.com/@JennixOficial" target="_blank">
+                <!-- Imagen del artista -->
                 <img src="img/jennix.jpg" alt="Jennix">
                 </a>
+                <!-- Nombre del artista -->
                 <h3>Jennix</h3>
             </div>
         </div>
     </section>
 
     
-
+     <!-- Sección de videos -->
     <section id="videos">
         <h2>🎥 Videos</h2>
         <p>Disfruta de los mejores videos musicales de este artista.</p>
+         <!-- Clase video-grid -->
         <div class="video-grid">
+             <!-- ¿Como pude enamorarme así de ti -->
             <iframe width="560" height="315" src="video/enamorarme.mp4" title="YouTube video player"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
+             <!-- Dame una oportunidad -->
             <iframe width="560" height="315" src="video/oportunidad.mp4" title="YouTube video player"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
+             <!-- No debí ilusionarme -->
             <iframe width="560" height="315" src="video/ilusion.mp4" title="YouTube video player"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
+             <!-- Tú y Yo -->
             <iframe width="560" height="315" src="video/tuyyo.mp4" title="YouTube video player"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
     </section>
 
+     <!-- Footer con enlaces a redes sociales -->
     <footer>
+        <!-- Clase redes-sociales CSS -->
         <div class="redes-sociales">
            
+            <!-- Red Social Youtube -->
             <a href="https://www.youtube.com/@XionMcOficial" target="_blank">
                 <img src="icon/youtube.svg" alt="YouTube">
             </a>
+            <!-- Red Social Instagram -->
             <a href="https://www.instagram.com/xionmc97/" target="_blank">
                 <img src="icon/instagram.svg" alt="Instagram">
             </a>
+            <!-- Red Social Tiktok -->
             <a href="https://www.tiktok.com/@xion_rap22" target="_blank">
                 <img src="icon/tiktok.svg" alt="TikTok">
             </a>
+            <!-- Red Social Spotify -->
             <a href="https://open.spotify.com/intl-es/artist/0YRVwZEar3mSHzLXZYD66P" target="_blank">
                 <img src="icon/spotify.svg" alt="Spotify">
             </a>
         </div>
+        <footer class="footer">
+
+            <!-- Créditos del desarrollador -->
+            <p>Todos los derechos reservados 2025 <span class="fecha"></span> &copy; Desarrollado por 
+                <a href="cv/cv.html">Jesus Alberto Garcia Garcia</a></p>
+        </footer>
     </footer>
+
+    <!-- Script para mostrar imágenes en un modal -->
     <script>
         function mostrarImagen(elemento) {
             document.getElementById("modal").style.display = "flex";
@@ -561,6 +747,8 @@
             document.getElementById("modal").style.display = "none";
         }
     </script>
+
+    <!-- Enlace a un archivo JavaScript externo -->
     <script src="js/app.js"></script>
 
 </body>
