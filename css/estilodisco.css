@@ -185,6 +185,7 @@ header {
     margin-top: 10px;
     font-weight: bold;
 }
+
 button {
     margin-top: 10px;
     padding: 15px 20px;
@@ -257,13 +258,13 @@ footer {
     display: flex; /* Activa Flexbox */
     justify-content: center; /* Centra los elementos horizontalmente */
     align-items: center; /* Centra los elementos verticalmente */
-    gap: 4rem; /* Espaciado entre los íconos */
+    gap: 3rem; /* Espaciado entre los íconos */
     flex-wrap: wrap; /* Permite que se acomoden en varias líneas si es necesario */
 }
 
 /* Estilos para los íconos */
 .redes-sociales a img {
-    width: 60px; /* Tamaño uniforme para los iconos */
+    width: 50px; /* Tamaño uniforme para los iconos */
     height: 60px;
     transition: transform 0.3s ease-in-out; /* Efecto de animación */
 }
@@ -271,4 +272,15 @@ footer {
 /* Efecto hover en los íconos */
 .redes-sociales a:hover img {
     transform: scale(1.2); /* Aumenta el tamaño ligeramente */
+}
+.footer .logo h2, .footer p{
+    text-align: center;
+}
+
+@media(min-width: 768px){
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
 }
